@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/retailer
+      database: retailer
+      auto-index-creation=true:
+server:
+  port: 8080
+products: '{"CD": 10,"BOOK": 5,"DVD": 15 }'
+discount:
+  DISCOUNT_DVD: "2 FOR 1"
+  DISCOUNT_THURS: "THURS"

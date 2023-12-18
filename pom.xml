@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.6.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.generic</groupId>
+	<artifactId>retailerapi</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>retailerapi</name>
+	<description>Retailer API</description>
+	<properties>
+		<java.version>1.8</java.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<org.projectlombok.version>1.18.22</org.projectlombok.version>
+		<spring.feign.version>2.2.2.RELEASE</spring.feign.version>
+		<feign.http.version>11.0</feign.http.version>
+		<commons.lang3.version>3.12.0</commons.lang3.version>
+		<commons.validator.version>1.7</commons.validator.version>
+		<rest-assured.version>3.3.0</rest-assured.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webflux</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${org.projectlombok.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+			<version>${spring.feign.version}</version>
+		</dependency>
+ 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${commons.lang3.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-validator</groupId>
+			<artifactId>commons-validator</artifactId>
+			<version>${commons.validator.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>${rest-assured.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>spring-mock-mvc</artifactId>
+			<version>${rest-assured.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
