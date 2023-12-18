@@ -1,5 +1,5 @@
 ## How To Setup & Run
-The program main class (RetailerAPIApplication) should execute from your IDE or can be run from the command line. It has been built with Java 8,  but other versions that you choose (11 or above) may be adequate.
+The program main class (RetailerAPIApplication) should execute from your IDE or can be run from the command line. It has been built with Java 8,  but other versions that you choose (8 or above) may be adequate.
 
 ## Command Line
 The server can be started with 'mvn spring-boot:run' from the command line. (ctl + c to exit) The server can be built with 'mvn clean package' (it will also run the tests where they exist) The tests can be run with 'mvn test'
